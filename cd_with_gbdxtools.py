@@ -22,6 +22,7 @@ cdtask.inputs.post_image = aoptask2.outputs.data.value
 workflow = gbdx.Workflow([ aoptask1, aoptask2, s3task1, s3task2, cdtask ])
 workflow.savedata(cdtask.outputs.cd_output.value, location="change_detection/test_job/Steps/change_detection-singleton/Output")
 
+workflow.execute()
 
 '''
 
