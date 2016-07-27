@@ -33,7 +33,7 @@ def search_by_shapefile(shapefile, filters, startDate, endDate):
         wkt_string = s.to_wkt()
         results = gbdx.catalog.search(searchAreaWkt=wkt_string, startDate=startDate,
                                    endDate=endDate, types = [ "DigitalGlobeAcquisition" ], filters=filters)
-        return results
+        #return results
     	#Make a shapefile of the results
 	schema3 = {'geometry': 'Polygon', 'properties':  {'available':'str',
 															'catalogID':'str',
