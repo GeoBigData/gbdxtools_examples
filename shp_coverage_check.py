@@ -93,7 +93,7 @@ def spatial_cov_from_results(shapefile, resultsList):
 
 def main():
 	results = search_by_shapefile('/Users/mollygraber/Documents/Tampa/westOutline.shp', filters, startDate, endDate)
-	spatial_cov_from_results('/Users/mollygraber/Documents/Tampa/westOutline.shp', results)
+	spatial_cov_from_results('/Users/mollygraber/Documents/Tampa/westOutline.shp', 'rawSearchResults.shp')
 
 if __name__ == "__main__":
     main()
